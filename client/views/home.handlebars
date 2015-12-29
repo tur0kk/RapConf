@@ -1,0 +1,31 @@
+<div class="center align-center">
+
+    <h1>Welcome</h1>
+
+    {{#with error}}
+        <div class="error-box">{{message}}</div>
+    {{/with}}
+
+
+
+    <div class="action-box rounded-small shadow" style='margin-right:75px'>
+        <p><h1>New Table</h1></p>
+        <p>Name (optional):</p>
+        <form action="CreateTable" method="POST">
+        <p><input name="table_name" class="rounded-small shadow"></p>
+        <p><input type="submit" class="shadow rounded-small submit-button" value="Create">
+            <!--<a href="CreateSession" class="shadow rounded-small" id="create_session">Create</a></p> -->
+        </form>
+    </div>
+
+    <div class="action-box rounded-small shadow" style='margin-left:75px'>
+        <p><h1>Join Table</h1></p>
+        <p>Name:</p>
+        <form action="JoinTable" method="POST">
+        <p><input name="table_name" class="rounded-small shadow"></p>
+        <p><input type="submit" class="rounded-small shadow submit-button" value="Join">
+            <!--<a href="" class="shadow rounded-small" id="join_session">Join</a></p> -->
+        </form>
+    </div>
+
+</div>

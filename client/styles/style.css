@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-family: Arial;
+}
+
+body {
+    padding-top: 50px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+/* "fix" html5 doctype behaviour */
+img {
+    display: block;
+}
+
+div.logo {
+    padding-left: 3em;
+    display:inline-block;
+    vertical-align: bottom;
+    background-image: url('../img/menu_bg.png');
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+
+div.navbar {
+    display:inline-block;
+    vertical-align: bottom;
+    background-image: url('../img/menu_bg.png');
+    background-repeat: repeat-x;
+    text-transform: capitalize;
+}
+
+div.navbar * {
+    font-family: Roman;
+}
+
+div.black-bar {
+    background-color: #000;
+    height: 13px;
+}
+
+.navbar ul {
+    list-style: none;
+    height: 57px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.center {
+    text-align: center;
+}
+
+.center * {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.no-lineheight {
+    vertical-align: bottom;
+}
+
+.navbar ul li {
+    font-size: 2em;
+    display: inline;
+}
+
+.navbar ul li a
+{
+    text-decoration: none;
+    padding: .2em 1em;
+    display: inline-block;
+    min-width: 5em;
+    text-align: center;
+    height: 100%;
+}
+
+.navbar ul li a:hover
+{
+    background-image: url('../img/menu_button_hover_bg.png');
+    background-repeat: repeat-x;
+}
+
+.navbar ul li a.current
+{
+    color: #fff;
+    background-image: url('../img/menu_button_active_bg.png');
+    background-repeat: repeat-x;
+    font-weight: bold;
+    text-shadow: -1px -1px rgba(0,0,0,0.15);
+}
+
+div.main {
+    background: url('../img/tiles.png') repeat;
+    padding: 2em 2em 2em 2em;
+    vertical-align: top;
+}
+
+div.action-box {
+    display: inline-block;
+    border: 2px solid #b7d167;
+    background-color: rgba(0,0,0,0.07);
+    min-width: 300px;
+    min-height: 250px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.submit-button {
+    font-family: Roman;
+}
+
+.action-box p {
+    text-align: center;
+    margin: 10px 10px 15px 10px;
+}
+
+.action-box input {
+    border: 2px solid #b7d167;
+    font-size: 20px;
+    padding: 4px 7px;
+    outline: 0;
+    -webkit-appearance: none;
+    text-align: left;
+}
+.action-box input:focus {
+    border-color: #849f31;
+}
+
+
+.action-box input[type="submit"] {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    color: #FFF;
+    text-shadow: 1px 1px rgba(0,0,0,0.3);
+
+
+    background: #bac573; /* Old browsers */
+    background: -moz-linear-gradient(top, #bac573 0%, #94ad57 50%, #819751 51%, #a5bc6c 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bac573), color-stop(50%,#94ad57), color-stop(51%,#819751), color-stop(100%,#a5bc6c)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #bac573 0%,#94ad57 50%,#819751 51%,#a5bc6c 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #bac573 0%,#94ad57 50%,#819751 51%,#a5bc6c 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #bac573 0%,#94ad57 50%,#819751 51%,#a5bc6c 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #bac573 0%,#94ad57 50%,#819751 51%,#a5bc6c 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bac573', endColorstr='#a5bc6c',GradientType=0 ); /* IE6-9 */
+}
+
+.action-box input[type="submit"]:hover {
+    background: #bfd255; /* Old browsers */
+    background: -moz-linear-gradient(top, #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bfd255), color-stop(50%,#8eb92a), color-stop(51%,#72aa00), color-stop(100%,#9ecb2d)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfd255', endColorstr='#9ecb2d',GradientType=0 ); /* IE6-9 */
+}
+
+.action-box * {
+    text-align: center;
+}
+
+.rounded-small {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.rounded-big {
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+}
+
+.shadow {
+    -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+}
+
+
+div.footer {
+    background: url('../img/tiles_fadeout.png') repeat;
+    height: 146px;
+    margin-bottom: 50px;
+}
+
+.footer span {
+    padding-left: 50px;
+    margin-top: 35px;
+    display:inline-block;
+}
+
+.error-box {
+    margin: 10px 0 10px 0;
+    font-weight: bold;
+}
+
+ul.about {
+    margin: 1em;
+}
+
+p.about {
+    margin-top: 1em;
+}
+
+ul.about li {
+    margin: 0.5em  0 0.5em 1em;
+}
+
+
+#tagline {
+    font-family: Roman;
+}

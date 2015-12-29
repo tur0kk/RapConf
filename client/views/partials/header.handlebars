@@ -1,0 +1,14 @@
+
+<div class="logo"><a href="/"><img src="/img/logo.png" /></a></div><!-- Make sure there is no space between elements
+--><!--
+--><div class="inline-block no-lineheight">
+    <span id="tagline">The Rapid Conferencing System</span>
+    <div class="black-bar"></div>
+    <div class="navbar">
+    <ul>
+        {{#each sections~}}
+            <li><a href="/{{this}}"{{#compare ../pageName this}} class="current"{{/compare}}>{{this}}</a></li>
+        {{~/each}}
+    </ul>
+    </div>
+</div><div class="inline-block no-lineheight"><img src="/img/navbar_tail.png"/></div>

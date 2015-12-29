@@ -1,0 +1,270 @@
+@colorPickerHeight: 52px;
+@menuHeight: 25px;
+@widgetInitHeight: 250px;
+@workspaceBacklinkHeight: 18px;
+@strokeSelectorHeight: 25px;
+@table-radius: 300px;
+@table-user-line-radius: 450px;
+@shared-workspace-size: 100px;
+@user-circle-radius: 75px;
+@marker-radius: 15px;
+@drop-area-radius: 200px;
+@drop-area-position: (@drop-area-radius / 2);
+
+textarea {
+    resize: none;
+}
+
+.user-circle {
+    width: @user-circle-radius;
+    height: @user-circle-radius;
+    position: absolute;
+    background-color: #184e7c;
+    border-radius: 100%;
+    border: 5px solid #000;
+}
+
+.user-circle-marker {
+    width: @marker-radius;
+    height: @marker-radius;
+    position: absolute;
+    background-color: #000;
+    border-radius: 100%;
+    left: (@user-circle-radius/2) - (@marker-radius / 2);
+    top: (@user-circle-radius/2) - (@marker-radius / 2);
+    cursor: pointer;
+}
+
+.table-element {
+    width: @table-radius;
+    height: @table-radius;
+    border-radius: 100%;
+    background-color: #727272;
+    position: absolute;
+}
+
+.table-user-line {
+    width: @table-user-line-radius;
+    height: @table-user-line-radius;
+    border-radius: 100%;
+    position: absolute;
+    border: 5px solid #000;
+
+}
+
+.shared-workspace {
+    background-color: #FFF;
+    text-decoration: none;
+    border-radius: 25%;
+    width: @shared-workspace-size;
+    height: @shared-workspace-size;
+}
+
+.workspace-link {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.workspace-marker {
+    border: 2px solid rgba(0,0,0,0.5);
+}
+
+.workspace {
+    position: absolute;
+}
+
+.private-drop-area {
+    width: @drop-area-radius;
+    height: @drop-area-radius;
+    background: #1c94c4;
+    position: absolute;
+    top: -@drop-area-position;
+    right: -@drop-area-position;
+    border-radius: 100%
+}
+
+.shared-drop-area {
+    width: @drop-area-radius;
+    height: @drop-area-radius;
+    background: #1c94c4;
+    position: absolute;
+    top: -@drop-area-position;
+    left: -@drop-area-position;
+    border-radius: 100%
+}
+
+.drop-area-hover-with-element {
+    width: @drop-area-radius;
+    height: @drop-area-radius;
+    background: rgba(28, 148, 196, 0.50);
+    border: 5px solid #000;
+}
+
+.drop-area-hover-without-element {
+    cursor: pointer;
+    background: rgba(28, 148, 196, 0.50);
+}
+
+
+.user-workspace {
+    word-wrap: break-word;
+    background-color: #184e7c;
+    border-radius: 15px;
+    width: 75px;
+    height: 50px;
+}
+
+#app-display {
+    position: relative;
+    border: 2px solid #000;
+    width: 1000px;
+    height: 650px;
+    border-radius: 5px;
+    background: rgba(0,0,0,0.05)
+}
+
+div.workspace-backlink {
+    background-image: url("../img/widget_menubar.png");
+    background-repeat: repeat-x;
+    overflow-y: hidden;
+
+}
+
+div.workspace-container {
+    display: inline-block;
+    position: relative;
+    width: 95%;
+    height: calc(~'100%' - @workspaceBacklinkHeight);
+    vertical-align: top;
+    overflow: hidden;
+}
+
+ul.toolbar {
+    list-style: none;
+    text-align: center;
+    height: calc(~'100%' - (@colorPickerHeight + @strokeSelectorHeight));
+}
+
+    img.add_widget {
+        padding-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 1000;
+    }
+
+
+div.toolbar-container {
+    background-color: rgba(0,0,0,0.15);
+    display: inline-block;
+    vertical-align: top;
+    height: calc(~'100% - 18px');
+    /* Temp properties */
+    min-height: 100px;
+    min-width: 50px;
+    margin-bottom: 0px;
+    bottom: 0px;
+    width: 5%;
+}
+    .strokeselector {
+        width: 100%;
+        height: @strokeSelectorHeight;
+    }
+    
+    .full-spectrum {
+        position: relative;
+    }
+
+
+.widget-frame {
+    border-color: #b7d167; 
+    border-width: 2px; 
+    border-style: solid;
+    border-radius: 5px;
+    min-height: 60px;
+    min-width: 200px;
+    width: 300px;
+    height: 250px;
+}
+
+.widget-background {
+    background: whitesmoke;
+}
+
+div.widget-frame {
+    position: absolute;
+    overflow: hidden;
+}
+
+.widget-menu {
+    height: @menuHeight;
+    background-image: url("../img/widget_menubar.png");
+    background-repeat: repeat-x;
+}
+
+.widget-title {
+    width: calc(~'100% - 35px');
+    overflow: hidden;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-top: calc(@menuHeight/2 - 12);
+}
+
+.cancel-img {
+    display: inline-block;
+    float: right;
+    width: 30px;
+    cursor: pointer;
+    margin-top: calc(@menuHeight/2 - 12);
+}
+
+.widget-container {
+    position: absolute;
+    width: 100%;
+    min-height: 30px;
+    min-width: 200px;
+    height: calc(@widgetInitHeight - @menuHeight);
+}
+
+.widget-textfield {
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+.votepad {
+    text-align: center;
+    margin-top: 60px;
+    
+}
+
+.votepad-thumbbox {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.votetext {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.load-screen {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 100000;
+    background-color: black;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+
+.spinner {
+    width: 100px;
+    height: 100px;
+}
+
